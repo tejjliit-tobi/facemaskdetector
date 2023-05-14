@@ -1,7 +1,8 @@
 opencv-python
 streamlit
 sqlalchemy
-tensorflow keras
+tensorflow
+keras
 numpy
 imutils
 scikit-learn
