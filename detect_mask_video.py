@@ -52,7 +52,7 @@ def video(face ='face_detector',model = 'mask_detector.model',cnf=.5):
 	maskNet = load_model(model)
 	print("[INFO] starting video stream...")
 	vs = VideoStream(src=0).start()
-	time.sleep(2.0)
+	#time.sleep(2.0)
 	
 	while True:
 		frame = vs.read()
