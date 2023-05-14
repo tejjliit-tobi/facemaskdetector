@@ -1,7 +1,7 @@
 import os
-import webcam
+#import webcam
 import streamlit as st
-import cv2
+#import cv2
 from configu import *
 #from sampleImage.detect_mask_image import detect
 from sqlalchemy.orm import sessionmaker
