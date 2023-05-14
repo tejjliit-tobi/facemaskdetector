@@ -1,0 +1,9 @@
+opencv-python
+streamlit
+sqlalchemy
+tensorflow keras
+numpy
+imutils
+scikit-learn
+matplotlib
+streamlit-state 
