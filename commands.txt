@@ -1,0 +1,13 @@
+pip install opencv-python
+pip install streamlit
+pip install sqlalchemy
+pip install tensorflow keras
+pip install numpy
+pip install imutils
+pip install scikit-learn
+pip install matplotlib
+pip install streamlit-state 
+pip install streamlit
+#sql db viewer ext...
+SQLite Viewer
+prototxt
