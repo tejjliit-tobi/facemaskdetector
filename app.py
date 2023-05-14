@@ -4,7 +4,7 @@ import streamlit as st
 #import cv2
 from configu import *
 #from sampleImage.detect_mask_image import detect
-from sqlalchemy.orm import sessionmaker
+#from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 # from converter import convert_video
 from detect_mask_video import video
