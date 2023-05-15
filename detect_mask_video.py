@@ -51,12 +51,13 @@ def video(face ='face_detector',model = 'mask_detector.model',cnf=.5):
 	print("[INFO] loading face mask detector model...")
 	maskNet = load_model(model)
 	print("[INFO] starting video stream...")
-	vs = VideoStream(src=0).start()
+	vs = VideoStream(src=cnf['input']).start()
 	#vs = cv2.VideoCapture(0)
 	time.sleep(2.0)
 	
 	while True:
 		frame = vs.read()
+		print(frame)
 		frame = imutils.resize(frame, width=400)
 		(locs, preds) = detect_and_predict_mask(frame, faceNet, maskNet)
 		for (box, pred) in zip(locs, preds):
