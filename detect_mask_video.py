@@ -56,7 +56,7 @@ def video(face ='face_detector',model = 'mask_detector.model',cnf=.5):
 	time.sleep(2.0)
 	
 	while True:
-		ret, frame = vs.read()
+		frame = vs.read()
 		frame = imutils.resize(frame, width=400)
 		(locs, preds) = detect_and_predict_mask(frame, faceNet, maskNet)
 		for (box, pred) in zip(locs, preds):
