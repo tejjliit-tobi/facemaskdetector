@@ -57,8 +57,6 @@ def video(face ='face_detector',model = 'mask_detector.model',cnf=.5):
 	
 	while True:
 		frame = vs.read()
-		if frame is None:
-            		break
 		print(frame)
 		frame = imutils.resize(frame, width=400)
 		(locs, preds) = detect_and_predict_mask(frame, faceNet, maskNet)
