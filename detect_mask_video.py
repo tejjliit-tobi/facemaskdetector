@@ -51,8 +51,8 @@ def video(face ='face_detector',model = 'mask_detector.model',cnf=.5):
 	print("[INFO] loading face mask detector model...")
 	maskNet = load_model(model)
 	print("[INFO] starting video stream...")
-	#vs = VideoStream().start()
-	vs = cv2.VideoCapture()
+	vs = VideoStream(src=0).start()
+	#vs = cv2.VideoCapture(0)
 	time.sleep(2.0)
 	
 	while True:
