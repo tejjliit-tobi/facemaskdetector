@@ -21,16 +21,6 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-
-
-# Check the list of available video capture devices
-for i in range(10):
-    cap = cv2.VideoCapture(i)
-    if cap is None or not cap.isOpened():
-        continue
-    print(f"Video capture device {i} is available")
-    cap.release()
-
         
 tab1, tab2, tab3, tab4 = st.tabs(["Home", "Dataset", "Instruction", "About"])
 
